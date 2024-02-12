@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(203, 44%, 93%);
+  --Grayish-Blue: hsl(217, 22%, 67%);
+  --blue: rgba(42, 178, 175, 0.7);
+}
+body {
+  font-family: "Karla", sans-serif;
+  background-color: var(--Light-Gray);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  width: 650px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgb(152 166 189 / 50%) 0px 5px 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .top {
+  padding: 40px;
+  height: 220px;
+}
+.container .top h2 {
+  color: var(--Cyan);
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.container .top h3 {
+  color: var(--Bright-Yellow);
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+.container .top p {
+  color: var(--Grayish-Blue);
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.7;
+  font-weight: 700;
+  padding-right: 15px;
+}
+.container .button {
+  display: flex;
+  height: 250px;
+}
+.container .button .left {
+  width: 100%;
+  background-color: var(--Cyan);
+  padding: 40px;
+  color: white;
+  border-bottom-left-radius: 12px;
+}
+.left h3 {
+  padding-bottom: 15px;
+}
+.left #p {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.left #p span {
+  font-size: 16px;
+  opacity: 0.6;
+  margin-left: 16px;
+}
+.left p {
+  color: var(--Light-Gray);
+}
+.left button {
+  border: 0;
+  background-color: var(--Bright-Yellow);
+  color: var(--Light-Gray);
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: "Karla", sans-serif;
+}
+.container .button .right {
+  width: 100%;
+  background-color: var(--Cyan);
+  opacity: 0.8;
+  padding: 40px;
+  color: white;
+  border-bottom-right-radius: 12px;
+}
+.container .button .right h3 {
+  margin-bottom: 19px;
+}
+.container .button .right p {
+  line-height: 1.4;
+  opacity: 0.7;
+  font-size: 14px;
+}
